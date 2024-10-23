@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #4a90e2, #50e3c2); /* Gradient from blue to teal */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav {
+  width: 25%;
+  background-color: rgba(255, 94, 77, 0.9); /* Soft red background */
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #d9534f; /* Darker red on hover */
+}
+
+nav ul li a.active {
+  background-color: rgba(255, 221, 51, 0.9); /* Yellow for active links */
+  color: black;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(52, 152, 219, 0.9); /* Soft blue background */
+  border-left: 1px solid #ccc;
+}
+
+aside {
+  width: 25%;
+  padding: 15px;
+  background-color: rgba(46, 204, 113, 0.9); /* Soft green background */
+}
+
+footer {
+  background-color: #34495e; /* Dark grey-blue footer */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+footer div {
+  flex: 1;
+  text-align: center;
+}
+
+footer .social {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 25%;
+  }
+
+  section {
+    width: 75%;
+  }
+
+  aside {
+    width: 100%;
+    display: block;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  footer .center, footer .right {
+    text-align: left;
+  }
+
+  footer .center {
+    margin-top: 10px;
+  }
+
+  footer .right {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav, section, aside {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .center, footer .right {
+    margin-top: 10px;
+  }
+}

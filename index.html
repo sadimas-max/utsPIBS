@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Raihan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="fotoprofil.jpg" alt="Profil" />
+        <h1>Raihan Dimas Suyitno</h1>
+    </header>
+    
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+            </ul>
+        </nav>
+        
+        <section id="content">
+            <div id="biodata">
+                <h2>Tentang Saya</h2>
+                <p>NIM: 2023081049</p>
+                <p>Nama: Raihan Dimas Suyitno</p>
+                <p>Agama: Islam</p>
+                <p>Tanggal Lahir: 13 februari 2005</p>
+                <p>Tempat Lahir: Tangerang </p>
+            </div>
+            <div id="pendidikan" style="display: none;">
+                <h2>Pendidikan</h2>
+                <p><strong>2023 - Sekarang | Universitas Pembangunan Jaya | Program Studi Sistem informasi</strong></p>
+                <hr style="border: 1px solid black;">
+                <p> Kenapa saya memilih sistem informasi karena saya minat pada teknologi bisnis karena di jurusan sistem informasi ini kita belajar keduanya</p>
+                    &nbsp;&nbsp;&nbsp;
+                    <p><strong>2020 - 2023 | SMA 11 TANGSERANG SELATAN | Jurusan IPS</strong></p>
+                    <hr style="border: 1px solid black;">
+                    <p>Keanapa saya memilih bersekolah dan kenapa memilih jurusan ips, karena zonasi dan saya tertarik pada bidang sosial dan sejarah serta geografi </p>
+                    &nbsp;&nbsp;&nbsp;
+                    <p><strong>2017 - 2020 | SMPN 6 TANGERANG SELATAN</strong></p>
+            </div>
+            <div id="pengalaman" style="display: none;">
+                <h2>Pengalaman</h2>
+                <p><strong>2024 (Mei) | Divisi PUBLIC RELATION | GIDHUB</strong></p>
+                <hr style="border: 1px solid black;">
+               <p> Bekerja sama dengan tim untuk membuat ide konten agar engedment pada event gidhub meningkat </p>
+                &nbsp;&nbsp;&nbsp;
+                <p><strong>2024 (Agustus) | Divisi Humas | PRODI GATHERING</strong></p>
+                <hr style="border: 1px solid black;">
+                <P>Bertanggung jawab membantu menghubungkan maba dengan para mahasiswa dan bertanggung jawab 
+                    juga pada konten yang diupload</P>
+            </div>
+            <div id="keahlian" style="display: none;">
+                <h2>Keahlian</h2>
+                <p>Dapat berkomunikasi dengan baik</p>
+                <p>dapat beradaptasi dengan baik</p>
+            </div>
+            <div id="publikasi" style="display: none;">
+                <h2>Publikasi</h2>
+                <p>Informasi Publikasi</p>
+            </div>
+        </section>
+        
+        <aside>
+            <h2>Hobi</h2>
+            <p>futsal</p>
+            <p>Bola</p>
+            <p>Pemrograman</p>
+            <p>motor</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="center">
+            <p>email: raihandims@gmail.com</p>
+            <p>Tiktok: @raihanganteng</p>
+            <p>Instagram: @raihadimas</p>
+        </div>
+        <div class="center">
+            <p>&copy; Copyright 2024. SADIM</p>
+        </div>
+        <div class="right">
+            <p>cuma punya mamah</p>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(contentId) {
+            const sections = document.querySelectorAll('section > div');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
